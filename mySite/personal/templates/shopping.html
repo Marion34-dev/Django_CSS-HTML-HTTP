@@ -1,0 +1,217 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+  <style>
+       p  {
+           text-align: center;
+           color: indigo;
+           background-color: lavender;
+           }
+  </style>
+
+  <head>
+    <!-- Install Boostrap/CSS and define metadata -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Let's shop!</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+
+  <!-- Define beginning of body of text -->
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+          <h1 id="top-page" style="color:green;text-align:center;">==== THE SIMPSONS ====</h1>
+          <h3 style="color:limegreen;text-align:center">We sell the best genuine figurines!</h3>
+      </div>
+    </div><br><br><br><br><br>
+
+      <!-- First item displayed -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png"
+                 alt="Lisa Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Lisa Simpson</div>
+          </div>
+          <div class="col-md">
+              <p>Lisa Simpson figurine<br><b>GBP 26.13</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+      <!-- Second item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+              alt="Bart Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Bart Simpson</div>
+          </div>
+          <div class="col-md">
+            <p> Bart Simpson figurine<br><b>GBP 26.13</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Third item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+              alt="Homer Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:right">Homer Simpson</div>
+          </div>
+          <div class="col-md">
+            <p> Homer Simpson figurine<br><b>GBP 26.13</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Fourth item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png"
+              alt="Marge Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Marge Simpson</div>
+          </div>
+          <div class="col-md">
+            <p> Marge Simpson figurine<br><b>GBP 26.13</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Fifth item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png"
+              alt="Maggie Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Maggie Simpson</div>
+          </div>
+        <div class="col-md">
+          <p> Maggie Simpson figurine<br><b>GBP 23.76</b></p>
+        </div>
+        <div class="col-md">
+          <button type="button" class="btn btn-outline-dark">Buy</button>
+        </div>
+      </div>
+    </div> <br>
+
+    <!-- Sixth item displayed -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/3/3e/Abe_Simpson.png"
+              alt="Abe Simpson" height="300" width="auto">
+              <div class="content fade" style="text-align:right">Abe Simpson</div>
+          </div>
+          <div class="col-md">
+            <p>Grampa Simpson figurine<br><b>GBP 18.37</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Seventh item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/7/7f/Mona_Simpson_%28The_Simpsons%29.png"
+               alt="Mona Simpson" height="300" width="auto">
+            <div class="content fade" style="text-align:center">Mona Simpson</div>
+          </div>
+          <div class="col-md">
+            <p>Mona Simpson figurine<br><b>GBP 18.37</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Eighth item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/8/80/Moe_Szyslak.png"
+              alt="Moe Szyslak" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Moe Szyslak</div>
+          </div>
+          <div class="col-md">
+            <p>Moe Szyslak figurine<br><b>GBP 21.66</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+        <!-- Ninth item displayed -->
+        <div class="col-md">
+          <div class="img-wrapper">
+            <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png"
+              alt="Monty Burns" height="300" width="auto">
+              <div class="content fade" style="text-align:center">Monty Burns</div>
+          </div>
+          <div class="col-md">
+            <p> Monty Burns figurine<br><b>GBP 18.37</b></p>
+          </div>
+          <div class="col-md">
+            <button type="button" class="btn btn-outline-dark">Buy</button>
+          </div>
+        </div><br>
+
+      <!-- Tenth item displayed -->
+      <div class="col-md">
+        <div class="img-wrapper">
+          <img class="zoom blur" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Krustytheclown.png"
+             alt="Krusty the Clown" height="300" width="auto">
+            <div class="content fade" style="text-align:center">Krusty the Clown</div>
+        </div>
+        <div class="col-md">
+          <p>Krusty the Clown figurine<br><b>GBP 18.37</b></p>
+        </div>
+        <div class="col-md">
+          <button type="button" class="btn btn-outline-dark">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to top and back to home page buttons added -->
+    <a href="#top-page" ><button style="margin-top:60px">Back to top</button></a>
+    <a href= "{% url 'index' %}" ><button style="margin-top:60px">Go back to Home page</button></a>
+
+    <!-- Footer -->
+    <footer>
+      <br><br><br><br><br>
+      <div class="col-md-8">
+        <!-- Form -->
+        <form style="float:left;color:grey;text-align:left">
+          <label> First name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "text"><br>
+          <label> Surname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type = "text"><br>
+          <label> Email address:&nbsp;</label> <input type = "text"><br>
+          <label> Phone number:</label> <input type = "text"><br>
+          <button>Submit</button>
+        </form>
+      </div>
+
+      <!-- Logo -->
+      <div class="col-md"> <br>
+        <img style="float:left;"
+             src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg"
+             alt="logo" height="40" width="auto">
+      </div>
+    </footer>
+
+  </body>
+</html>

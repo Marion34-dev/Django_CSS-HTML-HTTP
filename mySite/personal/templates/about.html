@@ -1,0 +1,41 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About page</title>
+    </head>
+
+    <!-- Defining background photo -->
+    <style>
+        html {
+              background: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Pagudpud_Beach.jpg)
+              no-repeat center center fixed;
+              -o-background-size: cover;
+              background-size: cover;
+              }
+    </style>
+
+    <!-- About me section -->
+    <body>
+        <p style="text-align:center;margin-top:450px;"><b>
+            Hi, I'm Marion! <span>😊</span></b></p>
+        <p style="text-align:center;">I am a 32-year-old living in the UK. I love reading books, going for walks, running
+            and I'm a meditation enthusiast.<br>
+            I have been working as a translator for years and with the extensive development of
+            Computer-Assisted Translation tools, I started looking into machine learning
+            and got hooked on programming. <br>I love how coding can have a meaningful impact.
+            I am currently learning software engineering and I am determined to start a career in tech
+            as a backend engineer!</p>
+
+        <!-- Creating button to go back to home page -->
+        <a href= "{% url 'index' %}"> <button style="margin-left:60px;
+        margin-top:200px;background-color: #e7e7e7; color:
+        black;">Go back to Home page</button> </a>
+    </body>
+
+</html>

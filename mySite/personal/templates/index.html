@@ -1,0 +1,46 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home page</title>
+    </head>
+
+    <!-- Defining formatting and background colour -->
+    <style>
+        h1 {
+            text-align: center;
+            color: orchid;
+           }
+
+        .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                }
+    </style>
+
+    <body style="background-color:lightpink;margin-top:150px;">
+
+        <!-- Welcome section -->
+        <h1><b><em>WELCOME!</em></b></h1>
+        <h3 style="padding-top:50px;margin-left:60px;"><b>Fancy...</b></h3>
+        <p> <ul style="margin-left:100px;text-align:justify;"><li>Learning a bit more
+            <a href="{% url 'about' %}">about me</a>?</li>
+            <li>Checking out my <a href="{% url 'cv' %}">online CV</a>?</li>
+            <li>How about looking at my <a href="{% url 'shopping' %}">Shopping page</a>?</li></ul>
+        </p>
+
+        <!-- Inserting three random pictures at every session -->
+        <div class="grid">
+            <div class="col-md">
+                <img style="margin-left:30px;margin-top:30px;" src="https://picsum.photos/500?random=1">
+                <img style="margin-left:30px;margin-top:30px;" src="https://picsum.photos/500?random=2">
+                <img style="margin-left:30px;margin-top:30px;" src="https://picsum.photos/500?random=3">
+            </div>
+        </div>
+
+    </body>
+</html>

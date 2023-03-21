@@ -1,0 +1,20 @@
+.img-wrapper > img,
+.img-wrapper > .content {
+                         transition: 200ms ease-in-out;
+                         }
+
+.img-wrapper:hover > img.blur {
+                               filter: blur(3px);
+                               }
+
+.img-wrapper:hover > img.zoom {
+                               transform: scale(1.1);
+                               }
+
+.img-wrapper:hover > .content.fade {
+                                    opacity:0
+                                    }
+
+.img-wrapper:hover > .content.fade {
+                                    opacity:1
+                                    }

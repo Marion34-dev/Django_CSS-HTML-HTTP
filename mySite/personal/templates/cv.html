@@ -1,0 +1,101 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>About page</title>
+    </head>
+
+        <!-- Defining internal CSS formatting rules -->
+    <style>
+        h1 {
+            padding:40px;
+            text-align: center;
+            color: orchid;
+           }
+
+        h2 {
+            padding:20;
+            margin-left: 300;
+            color: MediumAquamarine;
+           }
+
+        p {
+           margin-left: 40;
+           text-align: justify;
+           }
+    </style>
+
+        <!-- Defining background colour -->
+    <body style="background-color: wheat;">
+            <!-- Greeting message -->
+        <h1> My online CV </h1>
+
+        <!-- Inserting cute photo -->
+        <img style="float:right;padding:30px;"
+             src="https://upload.wikimedia.org/wikipedia/commons/5/52/Liliumbulbiferumflowertop.jpg"
+             alt="flower" height="400" width="auto" >
+
+        <!-- 'My Skills & Competences' list -->
+        <h2>My Skills & Competences</h2>
+            <ul style="margin-left: 40;"><li>Python</li>
+                <li>HTML</li>
+                <li>OOP</li>
+                <li>Pycharm</li>
+                <li>Multitasking</li>
+                <li>Problem solving</li>
+                <li>Teamwork</li>
+                <li>Taking initiatives and accountability</li>
+                <li>Interpersonal communication</li></ul>
+
+        <!-- Education section -->
+        <h2>Education</h2>
+            <p>Software Engineering course, HyperionDev, 2022-2023</p>
+
+        <!-- Work experience section -->
+        <h2>Work experience</h2>
+            <h4 style="margin-left: 40;">Student Software Engineer at HyperionDev, 2022-2023:</h4>
+            <!-- Listing skills obtained so far from the above experience with inline CSS rule -->
+            <p style="margin-left: 49;">* Software development<br>
+                * Creation of programs<br>
+                * Building applications<br>
+                * Ensuring version control<br>
+                * Object-oriented programming<br>
+                * Natural language processing<br>
+                * Backend web development<br>
+                * Code and processes documentation</p>
+
+        <!-- 'My projects' section -->
+        <h2>My projects</h2>
+            <!-- Listing first project -->
+            <ul style="margin-left: 40;margin-right:500;">
+                <li><em>CASPTONE IV</em>: a python program that allows stock management for a fictional shoe shop.
+                    It enables the user to view all shoes in stock, enter a new pair, search for a specific one,
+                    restock, calculate the total value for each pair in stock, and display special message
+                    for the pair with the highest quantity in stock. You can access it
+                <a href="https://github.com/Marion34-dev/finalCapstone" target="_blank">here</a>!</li>
+
+            <!-- Listing second project -->
+            <li style="margin-top:10px"><em>WATCH NEXT</em>: a python program that
+                suggests what film to watch next based on similarities between
+                the last film watched and the list of films provided. Click
+                <a href="https://github.com/Marion34-dev/watch_next" target="_blank">here</a>!</li></ul>
+
+        <!-- Contact details section -->
+        <h2>Contact details</h2>
+            <p>You can contact me:</p>
+            <ol style="margin-left: 40;"><li>On my <a href="https://www.linkedin.com/in/04071990/"
+                                                      target="_blank">LinkedIn</a> profile</li>
+                <li>At this address: marionjung34@hotmail.com</li></ol>
+
+            <p>Have a look at my <a href="https://github.com/Marion34-dev"
+                                    target="_blank">Github</a> profile as well!</p>
+
+        <!-- Creating button to go back to home page -->
+        <a href= "{% url 'index' %}" ><button style="margin-left:60px; margin-top:40px">Go back to Home page</button></a>
+
+    </body>
+</html>
